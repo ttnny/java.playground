@@ -17,27 +17,12 @@ class Dog extends Animal {
 class Main {
     public static void main(String[] args) {
         Animal myAnimal = new Animal(); // Create a Animal object
-        Animal myDog = new Dog();       // Create a Dog object
+        Animal myDog = new Dog();       // Create a Dog object type Animal
 
         myAnimal.animalSound();
         myDog.animalSound();
 
-        Dog myNewDog = new Dog();       // Create a Dog object
-        myNewDog.nickname();            // ???
-
-
-        /////////////////////////////////////////////////////////
-        // Polymorphism recommends to use the highest possible //
-        /////////////////////////////////////////////////////////
-
-        // ArrayList & LinkedList classes implements List interface
-        List<Integer> arrayList = new ArrayList<>();
-        List<Integer> linkedList = new LinkedList<>();
-
-        // Stack class also implements List interface but
-        // List<Integer> stack = new Stack<>() doesn't have
-        // push(), pop(), and peek() methods
-        List<Integer> stack1 = new Stack<>();
-        Stack<Integer> stack2 = new Stack<>();
+        Dog myNewDog = new Dog();       // Create a Dog object type Dog
+        myNewDog.nickname();            // Because of type Dog, it has nickname()
     }
 }

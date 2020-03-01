@@ -4,7 +4,7 @@ class Animal {
     }
 }
 
-class Dog extends Animal {
+class Puppy extends Animal {
     public void animalSound() {
         System.out.println("The dog says: BOW WOW");
     }
@@ -17,12 +17,12 @@ class Dog extends Animal {
 class Main {
     public static void main(String[] args) {
         Animal myAnimal = new Animal(); // Create a Animal object
-        Animal myDog = new Dog();       // Create a Dog object type Animal
+        Animal myPuppy = new Puppy();   // Create a Dog object type Animal
 
         myAnimal.animalSound();
-        myDog.animalSound();
+        myPuppy.animalSound();
 
-        Dog myNewDog = new Dog();       // Create a Dog object type Dog
-        myNewDog.nickname();            // Because of type Dog, it has nickname()
+        Puppy myNewPuppy = new Puppy(); // Create a Dog object type Dog
+        myNewPuppy.nickname();          // Because of type Dog, it has nickname()
     }
 }

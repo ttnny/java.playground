@@ -4,6 +4,7 @@ abstract class AnimalA {
     }
 
     abstract void eat();
+
     abstract void drink();
 }
 
@@ -15,12 +16,12 @@ interface AnimalI {
 class Dog extends AnimalA implements AnimalI {
 
     @Override
-    void eat() {
+    public void eat() {
 
     }
 
     @Override
-    void drink() {
+    public void drink() {
 
     }
 }
@@ -36,4 +37,3 @@ class Cat extends AnimalA {
 
     }
 }
-

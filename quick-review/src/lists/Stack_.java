@@ -9,6 +9,15 @@ public class Stack_ {
 
         // Use
         stack.push(5);
+        stack.push(5);
         stack.pop();
+        stack.peek();
+        stack.empty();
+        System.out.println(stack.search(5));
+
+        // Iterate
+        for (int item : stack) {
+            System.out.println(item);
+        }
     }
 }

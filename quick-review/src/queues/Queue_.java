@@ -1,4 +1,4 @@
-package lists;
+package queues;
 
 import java.util.*;
 
@@ -7,9 +7,6 @@ public class Queue_ {
         // Declare
         Queue<Integer> queue1 = new LinkedList<>();
         Queue<Integer> queue2 = new PriorityQueue<>();
-        PriorityQueue<String> pQueue = new PriorityQueue<>();
-        pQueue.add("a");
-        queue2.add(5);
 
         // Use
         queue1.add(5);

@@ -1,26 +1,19 @@
-package linkedlists;
+package lists;
 
 import java.util.LinkedList;
+import java.util.List;
 import java.util.ListIterator;
 
-public class main {
+class LinkedList_ {
     public static void main(String[] args) {
         // Declare
-        LinkedList<String> list = new LinkedList<>();
+        List<String> list = new LinkedList<>();
 
         // Use 1
-        list.addFirst("A");
         list.add("B");
         list.add("B"); // allow duplicates
-        list.addLast("Z");
         list.add(2, "D");
-
-        System.out.println(list);
-
         list.remove("D");
-        list.removeFirst();
-        list.removeLast();
-
         System.out.println(list);
 
         int size = list.size();

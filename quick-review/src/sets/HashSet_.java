@@ -7,25 +7,25 @@ import java.util.Set;
 public class HashSet_ {
     public static void main(String[] args) {
         // Declare
-        Set<String> set = new HashSet<>();
+        Set<String> hashSet = new HashSet<>();
 
         // Operate
-        set.add("A");
-        set.add("A"); // Not allow duplicates
-        set.add("E");
-        set.contains("A");
+        hashSet.add("E");
+        hashSet.add("E"); // no duplicates
+        hashSet.add("A");
+        hashSet.contains("E");
 
-        // Convert set to array
-        String[] array = set.toArray(new String[set.size()]);
+        // Convert HashSet to Array
+        String[] array = hashSet.toArray(new String[hashSet.size()]);
         System.out.println(Arrays.toString(array));
 
-        // Convert array to set
-        String[] vowels = {"a", "e", "i", "o", "u"};
-        set = new HashSet<>(Arrays.asList(vowels));
-        System.out.println(set);
+        // Convert Array to HashSet
+        String[] vowels = {"u", "o", "i", "e", "a"};
+        hashSet = new HashSet<>(Arrays.asList(vowels));
+        System.out.println(hashSet);
 
         // Iterate
-        for (String item : set) {
+        for (String item : hashSet) {
             System.out.println(item);
         }
     }
